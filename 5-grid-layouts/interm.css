@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    background: linear-gradient(lightblue, darkblue);
+    height: 100vh;
+}
+
+[class ^= "box-"] {                 /*imu visas klases, kurios turi savo pavadinime box-*/
+    display: grid;
+    place-items: center;
+    border: solid 5px saddlebrown;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.inermediate {
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;             /*20px top bottom, auto left right*/
+    display:grid;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .inermediate {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100px 80px 300px 80px 100px;   /*sukuriu 5 eilutes ir nusakau ju aukscius*/
+    }
+    
+    .inermediate .box-1 {
+        grid-column: 1/13;
+    }
+
+    .inermediate .box-2 {
+        grid-column: 1/13;
+    }
+    
+    .inermediate .box-3 {
+        grid-column: 1/13;
+    }
+
+    .inermediate .box-4 {
+        grid-column: 1/7;
+    }
+
+    .inermediate .box-5 {
+        grid-column: 7/13;
+    }
+
+    .inermediate .box-6 {
+        grid-column: 1/13;
+    }
+
+ }
+
+@media (min-width: 1080px) {
+
+    .inermediate {
+        /* grid-template-columns: repeat(12, 1fr); */     /* kartojasi, rasau tik kas keiciasi */
+        grid-template-rows: 100px 400px 100px;  
+    }
+
+    /* .inermediate .box-1 {
+        grid-column: 1/13;
+    } */
+
+    .inermediate .box-2 {
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+    
+    .inermediate .box-3 {
+        grid-column: 3/10;
+        grid-row: 2/4;
+    }
+
+    .inermediate .box-4 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    .inermediate .box-5 {
+        grid-column: 10/13;
+        grid-row: 2/4;
+    }
+
+    .inermediate .box-6 {
+        grid-column: 3/13;
+    }
+   
+}
