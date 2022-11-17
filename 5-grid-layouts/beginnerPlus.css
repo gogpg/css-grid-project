@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+h1, h3{
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+}
+
+body {
+    background: linear-gradient(lightblue, darkblue);
+    height: 100vh;
+}
+
+[class ^= "box-"] {                 /*imu visas klases, kurios turi savo pavadinime box-*/
+    display: grid;
+    place-items: center;
+    border: solid 5px saddlebrown;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.beginner-plus {
+    height: 80vh;
+    width: 90%;
+    margin: 10px auto;             /*20px top bottom, auto left right*/
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+   
+}
+
+.beginner-plus .box-1 {
+    grid-column: span 2;
+}
+
+.beginner-plus .box-2 {
+    grid-column: span 6;
+}
+
+.beginner-plus .box-3 {
+    grid-column: span 4;
+}
