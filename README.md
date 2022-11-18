@@ -8,6 +8,6 @@ CSS Grid Layouts
 * Responsive 12 Column Grid Layout
 * Responsive Grid Template Areas Layout
 * Responsive Grid Layout - no media Queries
-*
+
 ***
-*Published at:* 
+*Published at:* https://github.com/gogpg/css-grid-project.git
