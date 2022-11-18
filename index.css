@@ -1,0 +1,42 @@
+
+body {
+ background-color: rgb(125, 106, 106);
+}
+
+[class ^= "box-"] {
+
+}
+
+.master-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));     /*auto-fit tell the browser to handle the column sizing and element wrapping for us so that the elements will wrap into rows when the width is not large enough to fit them in without any overflow*/
+    gap: 10px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.master-container img {
+    height: 288px;
+    width: 160px;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.card {
+    text-align: center;
+    background: rgba(220, 220, 228, 0.25);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card .characters-info {
+    width: 90%;
+    height: 297px;
+    background:  rgba(8, 8, 8, 0.62);
+    border-radius: 5px;
+    color: rgb(221, 218, 213);
+    padding: 5px;
+    margin: 10px auto;
+}
