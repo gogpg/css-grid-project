@@ -1,11 +1,4 @@
 
-body {
- background-color: rgb(125, 106, 106);
-}
-
-[class ^= "box-"] {
-
-}
 
 .master-container {
     display: grid;

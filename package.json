@@ -1,0 +1,20 @@
+{
+  "name": "css-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gogpg/css-grid-project.git"
+  },
+  "keywords": [],
+  "author": "Giedre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gogpg/css-grid-project/issues"
+  },
+  "homepage": "https://github.com/gogpg/css-grid-project#readme"
+}
