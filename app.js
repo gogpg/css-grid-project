@@ -55,6 +55,7 @@ function display() {
 
         const charactersImage = document.createElement('img')
         charactersImage.src = item.image
+        charactersImage.setAttribute("alt", item.alt)
 
         imgPlace.appendChild(charactersImage)
 
